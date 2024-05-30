@@ -1,0 +1,2 @@
+This is just a dummy folder to showcase the folder structure.
+Please download the whole dataset and add the images here accordingly.
