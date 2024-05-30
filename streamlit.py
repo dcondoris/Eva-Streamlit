@@ -159,7 +159,7 @@ if X_train is not None and Y_train is not None and X_test is not None:
         # Plot distribution of product type codes in Y_train
         st.subheader("Distribution of Product Type Codes in Y_train")
         fig1, ax1 = plt.subplots(figsize=(10, 6))
-        sns.countplot(y=Y_train.iloc[:, 0], ax=ax1)
+        sns.countplot(y=Y_train.iloc[:, 1], ax=ax1)
         ax1.set_title('Distribution of Product Type Codes')
         ax1.set_xlabel('Count')
         ax1.set_ylabel('Product Type Code')
