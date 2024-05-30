@@ -48,7 +48,7 @@ selected_menu = st.sidebar.radio("", menu_items, index=0, key="menu")
 def load_data():
     try:
         X_train = pd.read_csv('X_train_update.csv')
-        Y_train = pd.read_csv('Y_train_CVwO8PX.csv')
+        Y_train = pd.read_csv('Y_train.csv')
         X_test = pd.read_csv('X_test_update.csv')
     except FileNotFoundError as e:
         st.error(f"Error loading CSV files: {e}")
