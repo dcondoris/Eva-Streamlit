@@ -170,7 +170,7 @@ if X_train is not None and Y_train is not None and X_test is not None:
         st.subheader("Length of Descriptions in X_train")
         X_train['Description Length'] = X_train['description'].apply(lambda x: len(str(x).split()))
         fig2, ax2 = plt.subplots(figsize=(10, 6))
-        sns.histplot(X_train['Description Length'], bins=50, kde=True, ax=ax2)
+        sns.histplot(X_train['Description Length'], kde=True, ax=ax2)
         ax2.set_title('Distribution of Description Lengths')
         ax2.set_xlabel('Description Length')
         ax2.set_ylabel('Frequency')
